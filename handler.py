@@ -10,7 +10,7 @@ def generate_video(prompt, duration=4, fps=16, resolution="576x1024"):
     output_path = os.path.join(OUTPUT_DIR, video_name)
 
     cmd = [
-        "python3", "app.py",
+        "python", "worker_runpod.py",
         "--prompt", prompt,
         "--fps", str(fps),
         "--duration", str(duration),
