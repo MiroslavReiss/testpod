@@ -1,6 +1,6 @@
 FROM camenduru/hunyuan-video-temp:latest
 
-WORKDIR /workspace/
+WORKDIR /content/HunyuanVideo/
 
 # Vytvoř si vlastní handler pro RunPod
 COPY handler.py .
